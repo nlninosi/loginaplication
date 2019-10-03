@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package frontera;
-
+import Entidad.*;
+import Control.*;
 /**
  *
  * @author Estudiante
@@ -99,6 +100,13 @@ public class Ingreso extends javax.swing.JPanel {
 
     private void aceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarActionPerformed
         // TODO add your handling code here:
+        Usuario usuario= new Usuario();
+        usuario.setNombre(nombreTF.getText());
+        usuario.setPassword(contraseniaTF.getText());
+        ValidarLogin validar =new ValidarLogin();
+        System.out.println("----------");
+        String resultado = validar.verificarLogin(usuario);
+        System.out.println(resultado);
     }//GEN-LAST:event_aceptarActionPerformed
 
 

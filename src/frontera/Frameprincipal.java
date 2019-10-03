@@ -5,6 +5,9 @@
  */
 package frontera;
 
+import Entidad.*;
+import java.util.ArrayList;
+
 /**
  *
  * @author Estudiante
@@ -12,8 +15,10 @@ package frontera;
 public class Frameprincipal extends javax.swing.JFrame {
     private Registro registro= new Registro();
     private Ingreso ingreso= new Ingreso();
+    public static Sistema sistema = new Sistema();
     public Frameprincipal() {
         initComponents();
+        inicializacion();
     }
 
     /**
@@ -148,6 +153,28 @@ public class Frameprincipal extends javax.swing.JFrame {
                 new Frameprincipal().setVisible(true);
             }
         });
+    }
+    public void inicializacion(){
+        ArrayList<Usuario> usuarios =new ArrayList<Usuario>();
+        Usuario a = new Usuario();
+        Usuario b = new Usuario();
+        Usuario c = new Usuario();
+        a.setNombre("jaun");
+        a.setPassword("1234");
+        b.setNombre("pedro");
+        b.setPassword("123");
+        c.setNombre("maria");
+        c.setPassword("12345");
+        usuarios.add(a);
+        usuarios.add(b);
+        usuarios.add(c);
+        sistema.setUsuarios(usuarios);
+        for(Usuario u:sistema.getUsuarios()){
+            System.out.println(u.getNombre());
+            System.out.println(u.getPassword());
+            System.out.println("-----------");
+        }
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
