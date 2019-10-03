@@ -68,9 +68,9 @@ public class Ingreso extends javax.swing.JPanel {
                     .addComponent(jLabel2))
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(aceptar)
                     .addComponent(contraseniaTF, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
-                    .addComponent(nombreTF))
+                    .addComponent(nombreTF)
+                    .addComponent(aceptar, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap(77, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -84,18 +84,19 @@ public class Ingreso extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(contraseniaTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
+                .addGap(27, 27, 27)
                 .addComponent(aceptar)
-                .addContainerGap(163, Short.MAX_VALUE))
+                .addContainerGap(165, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void contraseniaTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contraseniaTFActionPerformed
-        // TODO add your handling code here:
+        
+        
     }//GEN-LAST:event_contraseniaTFActionPerformed
 
     private void nombreTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreTFActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_nombreTFActionPerformed
 
     private void aceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarActionPerformed

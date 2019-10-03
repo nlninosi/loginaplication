@@ -33,6 +33,7 @@ public class Registro extends javax.swing.JPanel {
         nombreTF = new javax.swing.JTextField();
         contraseniaTF = new javax.swing.JTextField();
         validarcontraseniaTF = new javax.swing.JTextField();
+        aceptarU = new javax.swing.JButton();
 
         jLabel1.setText("Nombre");
 
@@ -58,25 +59,34 @@ public class Registro extends javax.swing.JPanel {
             }
         });
 
+        aceptarU.setText("Aceptar");
+        aceptarU.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aceptarUActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(86, 86, 86)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(validarcontraseniaTF))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1))
-                        .addGap(45, 45, 45)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(contraseniaTF, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(nombreTF, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(aceptarU)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel3)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(validarcontraseniaTF))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel2)
+                                .addComponent(jLabel1))
+                            .addGap(45, 45, 45)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(contraseniaTF, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(nombreTF, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(79, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -94,7 +104,9 @@ public class Registro extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(validarcontraseniaTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(163, Short.MAX_VALUE))
+                .addGap(37, 37, 37)
+                .addComponent(aceptarU)
+                .addContainerGap(103, Short.MAX_VALUE))
         );
 
         nombreTF.getAccessibleContext().setAccessibleName("a");
@@ -112,8 +124,15 @@ public class Registro extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_validarcontraseniaTFActionPerformed
 
+    private void aceptarUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarUActionPerformed
+        String password= contraseniaTF.getText();
+        String nombre= nombreTF.getText();
+        String vpassword= validarcontraseniaTF.getText();
+    }//GEN-LAST:event_aceptarUActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton aceptarU;
     private javax.swing.JTextField contraseniaTF;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
