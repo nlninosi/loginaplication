@@ -22,5 +22,8 @@ public class Sistema {
     public void setUsuarios(ArrayList <Usuario> Usuarios){
         this.Usuarios=Usuarios;
     }
+    public void addUsuarios(Usuario usuario){
+        this.Usuarios.add(usuario);
+    }
     
 }

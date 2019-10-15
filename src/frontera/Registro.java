@@ -5,6 +5,9 @@
  */
 package frontera;
 
+import Control.*;
+import Entidad.*;
+
 /**
  *
  * @author Estudiante
@@ -128,6 +131,7 @@ public class Registro extends javax.swing.JPanel {
         String password= contraseniaTF.getText();
         String nombre= nombreTF.getText();
         String vpassword= validarcontraseniaTF.getText();
+        RegistrarUsuario registrar= new RegistrarUsuario();
     }//GEN-LAST:event_aceptarUActionPerformed
 
 
